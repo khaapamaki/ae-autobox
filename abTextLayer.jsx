@@ -138,7 +138,7 @@ catch(err) {
 // ***** EFFECT: TRANSFORM > ANCHOR POINT *****
 
 // AutoBox 0.1.2
-// ANCHORPOINT ALIGNMENT - TOP=-1.0, BOTTOM=1.0, CENTER=0, LEFT=-1.0 OR RIGHT=1.0
+// SECONDARY ANCHORPOINT ALIGNMENT
 try {
     // Read Expression Control Values
     anchorPositionX = effect("Secondary Horizontal Alignment")("Slider");
@@ -171,7 +171,7 @@ catch(err) {
 // ***** EFFECT: TRANSFORM > POSITION *****
 
 // AutoBox 0.1.2
-// ADAPT POSITION TO ANCHORPOINT MOVEMENT
+// ADAPT SECONDARY POSITION TO SECONDARY ANCHORPOINT MOVEMENT
 try {
     effect("Secondary Transform")("Anchor Point")
 }
@@ -183,7 +183,7 @@ catch(err) {
 // ***** EFFECT: TRANSFORM > SCALE HEIGHT *****
 
 // AutoBox 0.1.2
-// SCALE HEIGHT - USE EXPRESSION CONTROLS FOR CONVENIENCE
+// SECONDARY SCALE HEIGHT - FOR EXPRESSION CONTROL USAGE
 try {
     effect("Secondary Uniform Scale")("Slider") * effect("Secondary Y Scale")("Slider") / 100;
 }
@@ -195,7 +195,7 @@ catch(err) {
 // ***** EFFECT: TRANSFORM > SCALE WIDTH *****
 
 // AutoBox 0.1.2
-// SCALE WIDTH - USE EXPRESSION CONTROLS FOR CONVENIENCE
+// SECONDARY SCALE WIDTH - FOR EXPRESSION CONTROL USAGE
 try {
     effect("Secondary Uniform Scale")("Slider") * effect("Secondary X Scale")("Slider") / 100;
 }
@@ -204,3 +204,20 @@ catch(err) {
     100;
 }
 
+// *******************************************************************************
+// *********************** EXPRESSION CONTROL EXPRESSIONS  ***********************
+// *******************************************************************************
+
+
+// ***** EXPRESSION CONTROL: REFERENCE TIME *****
+
+// AutoBox 0.1.2 - MODIFY IF NEEDED
+// Disable expression to set fixed time
+time;
+
+
+// ***** EXPRESSION CONTROL: REFERENCE TIME FOR HEIGHT *****
+
+// AutoBox 0.1.2 - MODIFY IF NEEDED
+// Disable expression to set fixed time
+thisLayer.outPoint;
