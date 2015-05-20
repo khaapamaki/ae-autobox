@@ -1,0 +1,4 @@
+AutoBox 0.1.2
+
+TO DO:
+    Separate hor/ver alignment source layers.. maybe.. 
