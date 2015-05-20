@@ -1,0 +1,9 @@
+0.1.2
+    Minor comment changes
+    Separate files for text layer's and box layer's expressions
+    Added example expressions for the time reference control
+
+
+0.1.1
+    ...coming later
+    
